@@ -2,13 +2,4 @@ language: cpp
 compiler:
   - gcc
   - clang
-before_install:
-  - rvm use $RVM --install --binary --fuzzy
-  - gem update --system
-  - gem --version
-before_script:
-  - travis_retry bundle
-  - travis_retry ./configure
-script: rake
-env:
-  - RVM=2.0.0
+script: ./
