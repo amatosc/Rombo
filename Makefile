@@ -1,6 +1,2 @@
-default: Rombo
-	${CC} --version
-	${CXX} --version
-	./Rombo
-
-Rombo:
+Rombo: Rombo
+	g++ Rombo.cpp -o Rombo
